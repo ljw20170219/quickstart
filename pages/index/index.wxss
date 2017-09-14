@@ -1,0 +1,31 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+.describe{
+    width: 500rpx
+}
+.upload_img{position: relative;left:30%;text-align:center;}
+.upload_img>view, .upload_img>text{display:inline-block}
+.upload_img>text{line-height:20rpx}
+.upload_img view image{width:70rpx;height:70rpx;}
+.upload_img view button{width:100rpx;height:50rpx;font-size:20rpx;padding-right:0;padding-left:0}
+.upload_img text{display: inline-block}
