@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<import src="../template/template.wxml"/>
 <view class="container">
   <!-- <view class="userinfo"> -->
     <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
@@ -14,10 +15,11 @@
         Gobi Partners managing partner Ken Xu will also join us for our AI event in Shanghai next Monday. Robots are taking away your jobs, they will become your boss, and you better get prepared.
     </text>
     <view class='upload_img'>
-        <view style='border:1rpx solid'>
+        <view>
             <image src='../image/Image.png'></image>
-            <button>点击传图</button>
+            <button bindtap="uploadImg">点击传图</button>
         </view>
         <text>0/10</text>
     </view>
+    <template is="regulation"/>
 </view>

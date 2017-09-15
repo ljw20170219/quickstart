@@ -1,0 +1,10 @@
+<!--
+  index: int
+  msg: string
+  time: string
+-->
+ <template name="regulation">
+  <view  class="regulation">
+    <text class='reg-top'>查看细则</text>
+  </view>
+</template> 

@@ -1,0 +1,2 @@
+.regulation{width: 95%;border-top:1rpx solid #898989}
+.regulation .reg-top{font-size:0.7rem;margin-left:50rpx;}
