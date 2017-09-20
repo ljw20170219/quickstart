@@ -27,3 +27,7 @@
 .upload_img view image{width:70rpx;height:70rpx;}
 .upload_img view button{width:100rpx;height:50rpx;font-size:20rpx;padding-right:0;padding-left:0}
 .upload_img text{position: absolute;top:50%;}
+
+/*字体图标*/
+.icon-display-none{display:none;}
+.icno-display-block{display:block;}

@@ -6,5 +6,6 @@
  <template name="regulation">
   <view  class="regulation">
     <text class='reg-top'>查看细则</text>
+    <text class="iconfont icon-less" bindtap='showMore'></text>
   </view>
 </template> 
