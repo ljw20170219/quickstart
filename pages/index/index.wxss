@@ -19,6 +19,7 @@
 .usermotto {
   margin-top: 200px;
 } */
+@import "../template/template.wxss";
 .describe{width: 620rpx;}
 .upload_img{position: relative;left:25%;text-align:center;}
 .upload_img>view, .upload_img>text{display:inline-block}

@@ -12,7 +12,7 @@
     <!-- <text class="user-motto">{{motto}}</text> -->
   <!-- </view> -->
     <text class='describe'>
-        Gobi Partners managing partner Ken Xu will also join us for our AI event in Shanghai next Monday. Robots are taking away your jobs, they will become your boss, and you better get prepared.
+        Gobi Partners managing partner Ken Xu will also join us for our AI event in Shanghai next Monday. Robots are taking away your jobs, they will become your boss, and you better get prepared
     </text>
     <view class='upload_img'>
         <view>
@@ -21,5 +21,11 @@
         </view>
         <text>0/10</text>
     </view>
-    <template is="regulation"/>
+    <view  class="regulation-head" wx:if="{{showView}}">
+        <text class='reg-top'>查看细则</text>
+        <text class="iconfont icon-less" bindtap='showMore'></text>
+    </view>
+    <block wx:else>
+        <template is="regulation"/>
+    </block>
 </view>

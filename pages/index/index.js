@@ -7,13 +7,14 @@ Page({
         userInfo: {},
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
+        showView:true,//与globalData的showView对应
     },
-  //事件处理函数
-//   bindViewTap: function() {
-//     wx.navigateTo({
-//       url: '../logs/logs'
-//     })
-//   },
+    //事件处理函数
+    // bindViewTap: function() {
+    //     wx.navigateTo({
+    //         url: '../logs/logs'
+    //     })
+    // },
     uploadImg:function(){
 
     },
@@ -52,7 +53,11 @@ Page({
             hasUserInfo: true
         })
     },
-    showMore: function (e) {
+    showMore:function(){
+        // 每次点击均对globalData.showView取反并将值赋给本地的showView
         app.globalData.showView = !app.globalData.showView;
-    },
+        this.setData({
+            showView : app.globalData.showView
+        })
+    }
 })
