@@ -2,7 +2,8 @@
     "pages":[
         "pages/index/index",
         "pages/logs/logs",
-        "pages/template/template"
+        "pages/template/template",
+        "pages/help/help"
     ],
     "window":{
         "backgroundTextStyle":"light",
@@ -27,7 +28,7 @@
         }, {
           "selectedIconPath": "pages/image/circle.png",
           "iconPath": "pages/image/circle.png",
-          "pagePath": "pages/test/test",
+          "pagePath": "pages/help/help",
           "text": "联系我们"
         }]
     }
