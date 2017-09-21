@@ -5,8 +5,7 @@ Page({
     * 页面的初始数据
     */
     data: {
-        userInfo: {},
-        avatar:null
+        userInfo: {}
     },
 
     /**
@@ -88,10 +87,5 @@ Page({
     */
     onShareAppMessage: function () {
 
-    },
-    errorImg:function(){
-        this.setData({
-            avatar:"../image/help.png"
-        })
     }
 })

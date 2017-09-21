@@ -2,6 +2,6 @@
     <view class="userinfo">
         <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
         <text class="userinfo-nickname">{{userInfo.nickName}}发来一个求助红包</text>
-        <image class="icon-help" src="{{avatar}}" binderror="errorImg"></image>
+        <image class="icon-help" src="../image/Image.png"></image>
     </view>
 </view>
