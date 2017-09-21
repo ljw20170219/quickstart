@@ -4,7 +4,7 @@
   <!-- <view class="userinfo"> -->
     <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
     <!-- <block wx:else> -->
-       <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image> --> 
+       <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image> -->
       <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
     <!-- </block> -->
   <!-- </view> -->
@@ -14,7 +14,7 @@
     <text class='describe'>
         Gobi Partners managing partner Ken Xu will also join us for our AI event in Shanghai next Monday. Robots are taking away your jobs, they will become your boss, and you better get prepared
     </text>
-    <view class='upload_img'>
+    <view class='upload-img'>
         <view>
             <image src='../image/Image.png'></image>
             <button bindtap="uploadImg">点击传图</button>
@@ -28,4 +28,10 @@
     <block wx:else>
         <template is="regulation"/>
     </block>
+    <view class="get-help">
+        <form>
+            <view>赏金(元)</view>
+            <input type="text" name="pay"></input>
+        </form>
+    </view>
 </view>

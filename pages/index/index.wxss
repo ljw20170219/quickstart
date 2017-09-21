@@ -20,15 +20,22 @@
   margin-top: 200px;
 } */
 @import "../template/template.wxss";
+/****describe****/
 .describe{width: 620rpx;}
-.upload_img{position: relative;left:25%;text-align:center;}
-.upload_img>view, .upload_img>text{display:inline-block}
-.upload_img>view{margin-right:10rpx}
-.upload_img>text{line-height:20rpx}
-.upload_img view image{width:70rpx;height:70rpx;}
-.upload_img view button{width:100rpx;height:50rpx;font-size:20rpx;padding-right:0;padding-left:0}
-.upload_img text{position: absolute;top:50%;}
 
+/****upload-img****/
+.upload-img{position: relative;left:25%;text-align:center;}
+.upload-img>view, .upload-img>text{display:inline-block}
+.upload-img>view{margin-right:10rpx}
+.upload-img>text{line-height:20rpx}
+.upload-img view image{width:70rpx;height:70rpx;}
+.upload-img view button{width:100rpx;height:50rpx;font-size:20rpx;padding-right:0;padding-left:0}
+.upload-img text{position: absolute;top:50%;}
+
+/****get-help****/
+.get-help{border-top:1rpx solid #D1D1D1;width:95%;margin-top:13rpx;}
+.get-help view{background-color:red;display:inline-block;}
+.get-help input{background-color:green;width:50%;display:inline-block;}
 /*字体图标*/
 .icon-display-none{display:none;}
 .icno-display-block{display:block;}
