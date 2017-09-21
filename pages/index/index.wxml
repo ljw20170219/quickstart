@@ -29,9 +29,13 @@
         <template is="regulation"/>
     </block>
     <view class="get-help">
-        <form>
-            <view>赏金(元)</view>
-            <input type="text" name="pay"></input>
-        </form>
+        <view class="get-help-form-content">
+            <form>
+                <view>赏金(元)</view>
+                <input type="number" name="pay"></input>
+                <view>最低赏金1.00元</view>
+                <button form-type="submit">生成求助红包</button>
+            </form>
+        </view>
     </view>
 </view>

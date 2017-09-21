@@ -34,8 +34,12 @@
 
 /****get-help****/
 .get-help{border-top:1rpx solid #D1D1D1;width:95%;margin-top:13rpx;}
-.get-help view{background-color:red;display:inline-block;}
-.get-help input{background-color:green;width:50%;display:inline-block;}
+.get-help-form-content{margin:50rpx auto;width:80%;}
+.get-help-form-content view:nth-child(1),.get-help-form-content input[type="number"]{height:60rpx;line-height:60rpx;font-size:35rpx}
+.get-help-form-content view:nth-child(1){float:left;font-weight:bold}
+.get-help-form-content view:nth-child(3){font-size:18rpx;line-height:60rpx;color:#D1D1D1;float:right;}
+.get-help-form-content input[type="number"]{border:1rpx solid #A0A0A0;margin-left:20rpx;width:285rpx;text-align:center;display:inline-block;}
+.get-help-form-content button{width:290rpx;margin-top:50rpx;font-size:25rpx;}
 /*字体图标*/
 .icon-display-none{display:none;}
 .icno-display-block{display:block;}
