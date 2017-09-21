@@ -1,13 +1,34 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/template/template"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "大咖来帮忙",
-    "navigationBarTextStyle":"black"
-  }
+    "pages":[
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/template/template"
+    ],
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "大咖来帮忙",
+        "navigationBarTextStyle":"black"
+    },
+    "tabBar":{
+        "color": "#a9b7b7",
+        "selectedColor": "#11cd6e",
+        "borderStyle":"white",
+        "list": [{
+          "selectedIconPath": "pages/image/circle.png",
+          "iconPath": "pages/image/circle.png",
+          "pagePath": "pages/index/index",
+          "text": "首页"
+        }, {
+          "selectedIconPath": "pages/image/circle.png",
+          "iconPath": "pages/image/circle.png",
+          "pagePath": "pages/logs/logs",
+          "text": "日志"
+        }, {
+          "selectedIconPath": "pages/image/circle.png",
+          "iconPath": "pages/image/circle.png",
+          "pagePath": "pages/test/test",
+          "text": "开心测试"
+        }]
+    }
 }
