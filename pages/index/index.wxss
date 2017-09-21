@@ -20,9 +20,6 @@
   margin-top: 200px;
 } */
 @import "../template/template.wxss";
-/****container****/
-.container{border:1rpx solid;}
-
 /****describe****/
 .describe{width: 620rpx;}
 
@@ -43,11 +40,6 @@
 .get-help-form-content view:nth-child(3){font-size:18rpx;line-height:60rpx;color:#999999;float:right;}
 .get-help-form-content input[type="number"]{border:1rpx solid #D1D1D1;margin-left:20rpx;width:285rpx;text-align:center;display:inline-block;}
 .get-help-form-content button{width:290rpx;margin-top:50rpx;font-size:25rpx;}
-
-/****navigation****/
-/*.navigation{background-color:yellow;width:100%;bottom:0;display:flex;flex-direction:row;justify-content:space-around;align-items:flex-end;}
-.navigation navigator{width:180rpx;text-align:center;}*/
-
 /*字体图标*/
 .icon-display-none{display:none;}
 .icno-display-{display:block;}

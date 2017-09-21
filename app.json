@@ -18,17 +18,17 @@
           "selectedIconPath": "pages/image/circle.png",
           "iconPath": "pages/image/circle.png",
           "pagePath": "pages/index/index",
-          "text": "首页"
+          "text": "我的记录"
         }, {
           "selectedIconPath": "pages/image/circle.png",
           "iconPath": "pages/image/circle.png",
           "pagePath": "pages/logs/logs",
-          "text": "日志"
+          "text": "余额提现"
         }, {
           "selectedIconPath": "pages/image/circle.png",
           "iconPath": "pages/image/circle.png",
           "pagePath": "pages/test/test",
-          "text": "开心测试"
+          "text": "联系我们"
         }]
     }
 }
