@@ -94,6 +94,19 @@ Page({
     },
 
     shareToCricle:function(){
-
+        wx.request({
+            url:'https://api.weixin.qq.com/cgi-bin/token',
+            data:{
+                grant_type:'client_credential',
+                appid:'wxe03b262a415a7da8',
+                secret:'48cd68d016dfced819d7048875622edb'
+            },
+            header:{
+                'content-type': 'application/json' // 默认值
+            },
+            success: function(res) {
+                console.log(res.data)
+            }
+        })
     }
 })
