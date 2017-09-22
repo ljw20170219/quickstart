@@ -6,7 +6,8 @@ Page({
     */
     data: {
         userInfo: {},
-        canIUse: wx.canIUse('button.open-type.getUserInfo')
+        canIUse: wx.canIUse('button.open-type.getUserInfo'),
+        canIUseShareByButton:wx.canIUse('button.open-type.share')
     },
 
     /**
@@ -85,7 +86,14 @@ Page({
     /**
     * 用户点击右上角分享
     */
-    onShareAppMessage: function () {
+    onShareAppMessage: function (res) {
+        return {
+            title:"大咖来帮忙",
+            path:"pages/help/help"
+        }
+    },
+
+    shareToCricle:function(){
 
     }
 })

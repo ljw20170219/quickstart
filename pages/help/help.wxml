@@ -8,8 +8,8 @@
     </view>
     <view class="help-icon">帮</view>
     <!-- 备用 <view class="help-icon"><image src="../image/help.png"></image></view> -->
-    <view class="share-to">
-        <view class="share-to-friend">转发给朋友</view>
-        <view class="share-to-circle">分享到朋友圈</view>
+    <view class="share-to" wx:if="{{canIUseShareByButton}}">
+        <button class="share-to-friend" open-type="share">转发给朋友</button>
+        <view class="share-to-circle" bindtap="shareToCricle">生成小程序二维码</view>
     </view>
 </view>
