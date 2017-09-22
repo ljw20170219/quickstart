@@ -10,4 +10,6 @@
 
 ## 点击事件
 - template.wxml中的icon-less和icon-moreunfold的点击放置在index.js文件下(暂定)
-- 
+
+## 备注(待修改)
+- 暂定help.wxml页面为tabBar页面,跳转函数为wx.switchTab,后期将换成wx.navigateTo方法,[详见此页面最后一行](https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html#wxrelaunchobject)

@@ -3,3 +3,14 @@
 .userinfo-avatar {width: 128rpx;height: 128rpx;margin: 20rpx;border-radius: 50%;}
 .userinfo-nickname {color: #aaa;}
 .userinfo .icon-help{height:400rpx;width:400rpx}
+
+/****help-icon****/
+.help-icon{border:1rpx solid #808080;border-radius:50%;width:300rpx;height:300rpx;text-align:center;line-height:300rpx;font-size:160rpx;color:#808080;margin-top:50rpx;}
+/*备用.help-icon image{width:500rpx;height:500rpx;}*/
+
+/****share-to****/
+.share-to, .share-to-friend, .share-to-circle{border:1rpx solid #808080;color:#808080;}
+.share-to{width:600rpx;height:400rpx;margin-top:100rpx;display:flex;flex-direction:column;align-items:center;text-align:center}
+.share-to-friend, .share-to-circle{height:80rpx;margin-top:86rpx;line-height:80rpx;border-radius:20rpx;}
+.share-to-friend{width:280rpx;}
+.share-to-circle{width:360rpx;}

@@ -1,5 +1,5 @@
 /**index.wxss**/
-/* .userinfo {
+ .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,8 @@
 
 .usermotto {
   margin-top: 200px;
-} */
+}
+
 @import "../template/template.wxss";
 /****describe****/
 .describe{width: 620rpx;}

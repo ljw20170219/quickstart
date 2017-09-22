@@ -71,7 +71,7 @@ Page({
     },
     //表单提交(暂只有页面跳转)
     formSubmit:function(e){
-        wx.navigateTo({
+        wx.switchTab({
             url:"../help/help",
             fail:function(){
                 console.log('aaaa')
