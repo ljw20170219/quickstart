@@ -13,4 +13,4 @@
 .share-to{width:600rpx;height:400rpx;margin-top:100rpx;display:flex;flex-direction:column;align-items:center;text-align:center}
 .share-to-friend, .share-to-circle{height:80rpx;margin-top:86rpx;line-height:80rpx;border-radius:20rpx;}
 .share-to-friend{width:280rpx;}
-.share-to-circle{width:360rpx; }
+.share-to-circle{width:360rpx;}
