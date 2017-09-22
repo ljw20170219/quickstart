@@ -30,11 +30,11 @@
     </block>
     <view class="get-help">
         <view class="get-help-form-content">
-            <form>
+            <form bindsubmit="formSubmit">
                 <view>赏金(元)</view>
-                <input type="number" name="pay"></input>
+                <input type="number" name="pay" bindinput="showSubmit"></input>
                 <view>最低赏金1.00元</view>
-                <button form-type="submit">生成求助红包</button>
+                <button formType="submit" disabled="{{disabled}}">生成求助红包</button>
             </form>
         </view>
     </view>

@@ -28,7 +28,7 @@
         }, {
           "selectedIconPath": "pages/image/circle.png",
           "iconPath": "pages/image/circle.png",
-          "pagePath": "pages/help/help",
+          "pagePath": "pages/test/test",
           "text": "联系我们"
         }]
     }

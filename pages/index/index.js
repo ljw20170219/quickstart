@@ -8,6 +8,7 @@ Page({
         hasUserInfo: false,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
         showView:true,//与globalData的showView对应
+        disabled:true,//默认提交按钮样式
     },
     //事件处理函数
     // bindViewTap: function() {
@@ -58,6 +59,23 @@ Page({
         app.globalData.showView = !app.globalData.showView;
         this.setData({
             showView : app.globalData.showView
+        })
+    },
+    //判断赏金金额
+    showSubmit:function(e){
+        if(e.detail.value >= 1){
+            this.setData({disabled:false})
+        }else{
+            this.setData({disabled:true})
+        }
+    },
+    //表单提交(暂只有页面跳转)
+    formSubmit:function(e){
+        wx.navigateTo({
+            url:"../help/help",
+            fail:function(){
+                console.log('aaaa')
+            }
         })
     }
 })
