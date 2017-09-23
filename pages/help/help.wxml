@@ -1,15 +1,26 @@
 <view class="container">
     <view class="userinfo">
-        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-        <block wx:else>
-            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-            <text class="userinfo-nickname">{{userInfo.nickName}}发来一个求助红包</text>
+        <button bindgetuserinfo="getUserInfo" open-type="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}">
+            获取头像昵称
+        </button>
+        <block wx:else="">
+            <image background-size="cover" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}">
+            </image>
+            <text class="userinfo-nickname">
+                {{userInfo.nickName}}发来一个求助红包
+            </text>
         </block>
     </view>
-    <view class="help-icon">帮</view>
+    <view class="help-icon">
+        帮
+    </view>
     <!-- 备用 <view class="help-icon"><image src="../image/help.png"></image></view> -->
     <view class="share-to" wx:if="{{canIUseShareByButton}}">
-        <button class="share-to-friend" open-type="share">转发给朋友</button>
-        <view class="share-to-circle" bindtap="shareToCricle">生成小程序二维码</view>
+        <button class="share-to-friend" open-type="share">
+            转发给朋友
+        </button>
+        <view bindtap="shareToCricle" class="share-to-circle">
+            生成小程序二维码
+        </view>
     </view>
 </view>
