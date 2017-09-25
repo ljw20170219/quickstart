@@ -1,8 +1,18 @@
+<import src="../template/template.wxml"/>
 <view class="container">
     <view class="question">
         <view class="picture" wx:if="{{hasUserInfo}}">
             <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
         </view>
-        <view class="question-detail">There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.</view>
+        <view class="question-detail">
+            <view class="text">
+                There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.
+            </view>
+            <view class="thumbnail">
+                <image class="img" src="../image/img1.jpg"></image>
+                <image class="img" src="../image/img2.jpg"></image>
+                <image class="img" src="../image/img3.jpg"></image>
+            </view>
+        </view>
     </view>
 </view>
