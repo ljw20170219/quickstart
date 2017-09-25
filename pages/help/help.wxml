@@ -11,9 +11,7 @@
             </text>
         </block>
     </view>
-    <view class="help-icon">
-        帮
-    </view>
+    <view class="help-icon">帮</view>
     <!-- 备用 <view class="help-icon"><image src="../image/help.png"></image></view> -->
     <view class="share-to" wx:if="{{canIUseShareByButton}}">
         <button class="share-to-friend" open-type="share">
