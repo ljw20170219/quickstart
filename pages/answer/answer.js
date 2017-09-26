@@ -20,8 +20,10 @@ Page({
         ],
         remainingTime:23,
         helpers:0,
-        perTip:1,
-        timeAgo:3
+        tip:1,
+        timeAgo:3, //问题在timeAgo之前回答
+        averageTip:1, //平分的赏金额
+        choosedHelper:1//被选中的回答者人数
     },
 
     /**

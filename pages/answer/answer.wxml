@@ -11,7 +11,7 @@
                 <image class="img" wx:for="{{imgUrl}}" wx:key="unique" src="{{item}}" data-index="{{index}}" bindtap="previewImage"></image>
             </view>
             <view class="remaining-time">还剩下{{remainingTime}}个小时</view>
-            <view class="helpers">共{{helpers}}人帮忙,同被选中的将分享赏金￥{{perTip}}元</view>
+            <view class="helpers">共{{helpers}}人帮忙,同时被选中的将分享赏金￥{{tip}}元</view>
         </view>
     </view>
     <include src="../common/regulation.wxml" />
@@ -19,21 +19,27 @@
         <view class="solution-no">暂时没人帮</view>
     </view>
     <block wx:else>
-        <view class="solution">
-            <view class="solution-helper">
-                <view class="helper-info" wx:if="{{hasUserInfo}}">
-                    <view>
-                        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
-                        <view class="userinfo-nickname">{{userInfo.nickName}}</view>
-                    </view>
-                    <view>
-                        <view class="average-tip">asdf</view>
-                        <checkbox class="choose"></checkbox>
+            <form>
+                <view class="solution">
+                    <view class="solution-helper">
+                        <view class="helper-info" wx:if="{{hasUserInfo}}">
+                            <view>
+                                <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+                                <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+                            </view>
+                            <view>
+                                <view class="average-tip">￥{{averageTip}}</view>
+                                <checkbox class="choose"></checkbox>
+                            </view>
+                        </view>
+                        <view class="helper-advise">Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.</view>
+                        <view class="time-ago">{{timeAgo}}小时之前</view>
                     </view>
                 </view>
-                <view class="helper-advise">Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.</view>
-                <view class="time-ago">{{timeAgo}}小时之前</view>
+            </form>
+            <view class="pay-tip">
+                <text>已选中{{choosedHelper}}个回答,确定后帮手将分享赏金</text>
+                <button>确定</button>
             </view>
-        </view>
     </block>
 </view>

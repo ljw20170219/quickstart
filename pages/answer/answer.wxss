@@ -1,4 +1,4 @@
-/****导入regulation.css****/
+/***导入regulation.css****/
 @import "../common/regulation.wxss";
 /****.question****/
 .question{width:80%;display:flex;flex-direction:row}
@@ -12,19 +12,17 @@
 .remaining-time, .helpers, .time-ago{font-size:0.5rem}
 
 /****solution****/
-.solution{border-top:1rpx solid #D1D1D1;margin-top:20rpx;padding-top:20rpx;width:80%}
+.solution{border-top:1rpx solid #D1D1D1;margin:20rpx auto 0;padding-top:20rpx;width:80%}
 .solution .solution-no{margin-top:100rpx;text-align:center}
 .helper-info{display: flex;flex-direction:row;justify-content:space-between;height:60rpx;line-height:50rpx}
 .helper-info .userinfo-avatar, .helper-info .userinfo-nickname{float:left;}
 .helper-info .userinfo-nickname{font-size:25rpx;margin-left:40rpx;}
 .helper-info .average-tip, .helper-info .choose{display:inline-block;}
 .helper-info .average-tip{margin-right:40rpx;font-size:25rpx;color:red;}
-/*
-.helper-info {height:60rpx;line-height:50rpx;}
-.helper-info image, .helper-info view{float:left;}
-.helper-info view{font-size:25rpx;margin-left:40rpx;}
-.helper-info checkbox{float: right;}
- */
 .solution-helper{border-bottom:1rpx solid #D1D1D1}
 .solution-helper .helper-advise{font-size:35rpx;color:#404040FF;width:85%;border:1rpx solid #D1D1D1;margin:20rpx auto 0;padding:10rpx}
 .time-ago{width:85%;margin:20rpx auto 0;padding:10rpx;}
+
+/****pay-tip****/
+.pay-tip{height:100rpx;line-height:100rpx;border:1rpx solid;display:flex;flex-direction:row;}
+.pay-tip text, .pay-tip button{font-size:25rpx;}
