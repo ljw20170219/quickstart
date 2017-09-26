@@ -15,13 +15,24 @@
         </view>
     </view>
     <include src="../common/regulation.wxml" />
-    <view class="solution" wx:if="{{!solution}}">
+    <view class="solution" wx:if="{{solution}}">
         <view class="solution-no">暂时没人帮</view>
     </view>
     <block wx:else>
         <view class="solution">
-            <view class="solution-someone">
-                有人帮
+            <view class="solution-helper">
+                <view class="helper-info" wx:if="{{hasUserInfo}}">
+                    <view>
+                        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+                        <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+                    </view>
+                    <view>
+                        <view class="average-tip">asdf</view>
+                        <checkbox class="choose"></checkbox>
+                    </view>
+                </view>
+                <view class="helper-advise">Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.</view>
+                <view class="time-ago">{{timeAgo}}小时之前</view>
             </view>
         </view>
     </block>

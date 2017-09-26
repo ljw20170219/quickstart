@@ -20,7 +20,8 @@ Page({
         ],
         remainingTime:23,
         helpers:0,
-        perTip:1
+        perTip:1,
+        timeAgo:3
     },
 
     /**
@@ -41,6 +42,7 @@ Page({
                     hasUserInfo: true
                 })
             }
+            console.log(app.globalData.userInfo)
         } else {
         // 在没有 open-type=getUserInfo 版本的兼容处理
             wx.getUserInfo({
@@ -53,6 +55,7 @@ Page({
                 }
             })
         }
+
     },
     showMore:function(){
         regObj.showMore()

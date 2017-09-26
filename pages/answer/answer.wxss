@@ -3,13 +3,28 @@
 /****.question****/
 .question{width:80%;display:flex;flex-direction:row}
 .question .picture{margin-right:15rpx}
-.question .picture .userinfo-avatar{width:50rpx;height:50rpx;border-radius:50%;}
+.userinfo-avatar{width:50rpx;height:50rpx;border-radius:50%;}
 .question .question-detail{font-size:35rpx;color:#404040FF;width:90%}
 
 .thumbnail{display:flex;flex-direction:row;margin-top:20rpx;margin-bottom:20rpx}
 .thumbnail image{width:100rpx;height:100rpx;margin-right:5rpx;}
 
-.remaining-time, .helpers{font-size:0.5rem}
+.remaining-time, .helpers, .time-ago{font-size:0.5rem}
 
 /****solution****/
-.solution .solution-no{margin-top:100rpx}
+.solution{border-top:1rpx solid #D1D1D1;margin-top:20rpx;padding-top:20rpx;width:80%}
+.solution .solution-no{margin-top:100rpx;text-align:center}
+.helper-info{display: flex;flex-direction:row;justify-content:space-between;height:60rpx;line-height:50rpx}
+.helper-info .userinfo-avatar, .helper-info .userinfo-nickname{float:left;}
+.helper-info .userinfo-nickname{font-size:25rpx;margin-left:40rpx;}
+.helper-info .average-tip, .helper-info .choose{display:inline-block;}
+.helper-info .average-tip{margin-right:40rpx;font-size:25rpx;color:red;}
+/*
+.helper-info {height:60rpx;line-height:50rpx;}
+.helper-info image, .helper-info view{float:left;}
+.helper-info view{font-size:25rpx;margin-left:40rpx;}
+.helper-info checkbox{float: right;}
+ */
+.solution-helper{border-bottom:1rpx solid #D1D1D1}
+.solution-helper .helper-advise{font-size:35rpx;color:#404040FF;width:85%;border:1rpx solid #D1D1D1;margin:20rpx auto 0;padding:10rpx}
+.time-ago{width:85%;margin:20rpx auto 0;padding:10rpx;}
