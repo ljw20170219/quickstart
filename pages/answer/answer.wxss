@@ -6,5 +6,10 @@
 .question .picture .userinfo-avatar{width:50rpx;height:50rpx;border-radius:50%;}
 .question .question-detail{font-size:35rpx;color:#404040FF;width:90%}
 
-.thumbnail{display:flex;flex-direction:row;}
-.thumbnail image{width:50rpx;height:50rpx;margin-right:5rpx;}
+.thumbnail{display:flex;flex-direction:row;margin-top:20rpx;margin-bottom:20rpx}
+.thumbnail image{width:100rpx;height:100rpx;margin-right:5rpx;}
+
+.remaining-time, .helpers{font-size:0.5rem}
+
+/****solution****/
+.solution .solution-no{margin-top:100rpx}

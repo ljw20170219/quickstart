@@ -1,14 +1,14 @@
-.regulation{width:95%}
+.regulation{width:95%;margin-top:50rpx}
 .regulation>view{margin:0 auto;margin-top:10rpx}
-.regulation-head{width: 85%;border-top:1rpx solid #D1D1D1;margin-top:10rpx}
-.regulation-head .reg-top{font-size:0.7rem;margin-left:25rpx;}
+.regulation-head{width: 85%;border-top:1rpx solid #D1D1D1;margin-top:10rpx;padding-top:20rpx}
+.regulation-head .reg-top{font-size:0.9rem;margin-left:25rpx;}
 .regulation-content{width:80%}
 .regulation-content p{display:block}
 
 /* 字体图标 */
 .iconfont {
     font-family:"iconfont" !important;
-    font-size:16px;
+    font-size:0.9rem;
     font-style:normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

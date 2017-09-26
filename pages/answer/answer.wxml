@@ -8,11 +8,21 @@
                 There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.
             </view>
             <view class="thumbnail">
-                <image class="img" src="../image/img1.jpg"></image>
-                <image class="img" src="../image/img2.jpg"></image>
-                <image class="img" src="../image/img3.jpg"></image>
+                <image class="img" wx:for="{{imgUrl}}" wx:key="unique" src="{{item}}" data-index="{{index}}" bindtap="previewImage"></image>
             </view>
+            <view class="remaining-time">还剩下{{remainingTime}}个小时</view>
+            <view class="helpers">共{{helpers}}人帮忙,同被选中的将分享赏金￥{{perTip}}元</view>
         </view>
     </view>
     <include src="../common/regulation.wxml" />
+    <view class="solution" wx:if="{{!solution}}">
+        <view class="solution-no">暂时没人帮</view>
+    </view>
+    <block wx:else>
+        <view class="solution">
+            <view class="solution-someone">
+                有人帮
+            </view>
+        </view>
+    </block>
 </view>

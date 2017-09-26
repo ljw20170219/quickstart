@@ -10,7 +10,17 @@ Page({
      * 页面的初始数据
      */
     data: {
-      hasUserInfo:false
+        hasUserInfo:false,
+        showView:true,
+        solution:false,
+        imgUrl:[
+            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506421925352&di=1305aa2226d0b537ff0e88baa1a754b1&imgtype=jpg&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D3925072816%2C1436130400%26fm%3D214%26gp%3D0.jpg',
+            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506421924144&di=5947707df21f47455b78065c633f2662&imgtype=0&src=http%3A%2F%2Fwww.ikuku.cn%2Fwp-content%2Fuploads%2Fuser%2Fu1497%2FPOST%2Fp211963%2F1403092292994152-818x460.jpg',
+            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506421924143&di=2c9983480258103c9ff7490316ed712e&imgtype=0&src=http%3A%2F%2Fwww.ikuku.cn%2Fwp-content%2Fuploads%2Fuser%2Fu1497%2FPOST%2Fp182768%2F138743816870313-ibijiashan-rukou-fuwuqu-chengshijianzhu-818x380.jpg'
+        ],
+        remainingTime:23,
+        helpers:0,
+        perTip:1
     },
 
     /**
@@ -44,56 +54,18 @@ Page({
             })
         }
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
-    },
     showMore:function(){
         regObj.showMore()
+        this.setData({
+            showView:app.globalData.showView
+        })
+    },
+    previewImage:function(e){
+        var index = e.currentTarget.dataset.index,
+            imgUrl = this.data.imgUrl;
+        wx.previewImage({
+            current:imgUrl[index],
+            urls:imgUrl
+        })
     }
 })
