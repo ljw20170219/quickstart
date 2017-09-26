@@ -1,6 +1,9 @@
 //index.js
 //获取应用实例
 const app = getApp()
+
+// 引入regulation.js
+var regObj = require('../common/regulation.js')
 var indexObj = {
     data: {
         motto: 'Hello World',
@@ -55,8 +58,7 @@ var indexObj = {
         })
     },
     showMore:function(){
-        // 每次点击均对globalData.showView取反并将值赋给本地的showView
-        app.globalData.showView = !app.globalData.showView;
+        regObj.showMore()
         this.setData({
             showView : app.globalData.showView
         })

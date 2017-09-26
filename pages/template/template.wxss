@@ -1,4 +1,4 @@
-.regulation-head{width: 95%;border-top:1rpx solid #D1D1D1;}
+.regulation-head{width: 95%;border-top:1rpx solid #D1D1D1;margin-top:10rpx}
 .regulation-head .reg-top{font-size:0.7rem;margin-left:50rpx;}
 .regulation-content{width:76%}
 .regulation-content p{display:block}

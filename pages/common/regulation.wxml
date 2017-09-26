@@ -1,0 +1,18 @@
+<view class="regulation">
+    <view class="regulation-head" wx:if="{{showView}}">
+        <text class='reg-top'>查看细则</text>
+        <text class="iconfont icon-less" bindtap='showMore'></text>
+    </view>
+    <block wx:else>
+        <view  class="regulation-head">
+            <text class='reg-top'>查看细则</text>
+            <text class="iconfont icon-moreunfold" bindtap='showMore'></text>
+        </view>
+        <view class="regulation-content">
+            <p>1.今天没有下雨,但必须要带雨伞,如果没有就把你关到牢里去.</p>
+            <p>2.反所有的好日子都过没了,以后只有过猪的生活了.</p>
+            <p>3.所有的罪犯都是无辜的,法律才是讨人厌的,必须废除所有的法律,让我们自由的生活.</p>
+            <p>4.鱼儿离不开沙,给我一点沙吧,让我养活这条小金鱼.</p>
+        </view>
+    </block>
+</view>

@@ -1,46 +1,129 @@
 /**index.wxss**/
- .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
 }
 
 .userinfo-nickname {
-  color: #aaa;
+    color: #aaa;
 }
 
 .usermotto {
-  margin-top: 200px;
+    margin-top: 200px;
 }
 
-@import "../template/template.wxss";
+
+/****导入regulation.css****/
+
+@import "../common/regulation.wxss";
+
 /****describe****/
-.describe{width: 620rpx;}
+
+.describe {
+    width: 620rpx;
+}
+
 
 /****upload-img****/
-.upload-img{position: relative;left:25%;text-align:center;}
-.upload-img>view, .upload-img>text{display:inline-block}
-.upload-img>view{margin-right:10rpx}
-.upload-img>text{line-height:20rpx}
-.upload-img view image{width:70rpx;height:70rpx;}
-.upload-img view button{width:100rpx;height:50rpx;font-size:20rpx;padding-right:0;padding-left:0}
-.upload-img text{position: absolute;top:50%;}
+
+.upload-img {
+    position: relative;
+    left: 25%;
+    text-align: center;
+}
+
+.upload-img>view,
+.upload-img>text {
+    display: inline-block
+}
+
+.upload-img>view {
+    margin-right: 10rpx
+}
+
+.upload-img>text {
+    line-height: 20rpx
+}
+
+.upload-img view image {
+    width: 70rpx;
+    height: 70rpx;
+}
+
+.upload-img view button {
+    width: 100rpx;
+    height: 50rpx;
+    font-size: 20rpx;
+    padding-right: 0;
+    padding-left: 0
+}
+
+.upload-img text {
+    position: absolute;
+    top: 50%;
+}
+
 
 /****get-help****/
-.get-help{border-top:1rpx solid #D1D1D1;width:95%;margin-top:13rpx;}
-.get-help-form-content{margin:50rpx auto;width:80%;}
-.get-help-form-content view:nth-child(1),.get-help-form-content input[type="number"]{height:60rpx;line-height:60rpx;font-size:35rpx}
-.get-help-form-content view:nth-child(1){float:left;font-weight:bold}
-.get-help-form-content view:nth-child(3){font-size:18rpx;line-height:60rpx;color:#999999;float:right;}
-.get-help-form-content input[type="number"]{border:1rpx solid #D1D1D1;margin-left:20rpx;width:285rpx;text-align:center;display:inline-block;}
-.get-help-form-content button{width:290rpx;margin-top:50rpx;font-size:25rpx;}
+
+.get-help {
+    border-top: 1rpx solid #D1D1D1;
+    width: 95%;
+    margin-top: 13rpx;
+}
+
+.get-help-form-content {
+    margin: 50rpx auto;
+    width: 80%;
+}
+
+.get-help-form-content view:nth-child(1),
+.get-help-form-content input[type="number"] {
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 35rpx
+}
+
+.get-help-form-content view:nth-child(1) {
+    float: left;
+    font-weight: bold
+}
+
+.get-help-form-content view:nth-child(3) {
+    font-size: 18rpx;
+    line-height: 60rpx;
+    color: #999999;
+    float: right;
+}
+
+.get-help-form-content input[type="number"] {
+    border: 1rpx solid #D1D1D1;
+    margin-left: 20rpx;
+    width: 285rpx;
+    text-align: center;
+    display: inline-block;
+}
+
+.get-help-form-content button {
+    width: 290rpx;
+    margin-top: 50rpx;
+    font-size: 25rpx;
+}
+
+
 /*字体图标*/
+
+
+/*
 .icon-display-none{display:none;}
 .icno-display-{display:block;}
+*/

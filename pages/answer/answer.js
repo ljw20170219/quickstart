@@ -1,6 +1,9 @@
 // answer.js
 //获取应用实例
 const app = getApp()
+
+// 引入regulation.js
+var regObj = require('../common/regulation.js')
 Page({
 
     /**
@@ -89,5 +92,8 @@ Page({
      */
     onShareAppMessage: function () {
 
+    },
+    showMore:function(){
+        regObj.showMore()
     }
 })

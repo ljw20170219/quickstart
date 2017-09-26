@@ -1,15 +1,15 @@
 <!--index.wxml-->
-<import src="../template/template.wxml"/>
+<import src="../template/template.wxml" />
 <view class="container">
-<!--
-    <view class="userinfo">
-        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-        <block wx:else>
-            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-        </block>
-    </view>
-    <view class="usermotto"><text class="user-motto">{{motto}}</text></view>
+    <!--
+<view class="userinfo">
+<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+<block wx:else>
+<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</block>
+</view>
+<view class="usermotto"><text class="user-motto">{{motto}}</text></view>
 -->
     <text class='describe'>
         Gobi Partners managing partner Ken Xu will also join us for our AI event in Shanghai next Monday. Robots are taking away your jobs, they will become your boss, and you better get prepared
@@ -21,13 +21,16 @@
         </view>
         <text>0/10</text>
     </view>
-    <view  class="regulation-head" wx:if="{{showView}}">
+    <!--
+    <view class="regulation-head" wx:if="{{showView}}">
         <text class='reg-top'>查看细则</text>
         <text class="iconfont icon-less" bindtap='showMore'></text>
     </view>
     <block wx:else>
-        <template is="regulation"/>
+        <template is="regulation" />
     </block>
+    -->
+    <include src="../common/regulation.wxml" />
     <view class="get-help">
         <view class="get-help-form-content">
             <form bindsubmit="formSubmit">
@@ -38,5 +41,4 @@
             </form>
         </view>
     </view>
-
 </view>
