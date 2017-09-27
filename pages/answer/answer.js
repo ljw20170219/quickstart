@@ -23,7 +23,24 @@ Page({
         tip:1,
         timeAgo:3, //问题在timeAgo之前回答
         averageTip:1, //平分的赏金额
-        choosedHelper:1//被选中的回答者人数
+        choosedHelper:1, //被选中的回答者人数
+        answerGroup:[
+            {
+                userinfoAvatarUrl:'https://wx.qlogo.cn/mmopen/vi_32/d4dVeADn1RmEbU9JicX3niaBicurlPAZ1pKUHibastzHVoU9SdC77iamGTwwFptPMVkqQurNWLYvcgHFtpXROKckLCw/0',
+                userinfoNickName:'Mythrow',
+                userAnswer:"Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.",
+            },
+            {
+                userinfoAvatarUrl:'https://wx.qlogo.cn/mmopen/vi_32/d4dVeADn1RmEbU9JicX3niaBicurlPAZ1pKUHibastzHVoU9SdC77iamGTwwFptPMVkqQurNWLYvcgHFtpXROKckLCw/0',
+                userinfoNickName:'Mythrow',
+                userAnswer:"Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.",
+            },
+            {
+                userinfoAvatarUrl:'https://wx.qlogo.cn/mmopen/vi_32/d4dVeADn1RmEbU9JicX3niaBicurlPAZ1pKUHibastzHVoU9SdC77iamGTwwFptPMVkqQurNWLYvcgHFtpXROKckLCw/0',
+                userinfoNickName:'Mythrow',
+                userAnswer:"Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.",
+            },
+        ]
     },
 
     /**

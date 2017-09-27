@@ -19,11 +19,10 @@
 .helper-info .userinfo-nickname{font-size:25rpx;margin-left:40rpx;}
 .helper-info .average-tip, .helper-info .choose{display:inline-block;}
 .helper-info .average-tip{margin-right:40rpx;font-size:25rpx;color:red;}
-.solution-helper{border-bottom:1rpx solid #D1D1D1}
 .solution-helper .helper-advise{font-size:35rpx;color:#404040FF;width:85%;border:1rpx solid #D1D1D1;margin:20rpx auto 0;padding:10rpx}
 .time-ago{width:85%;margin:20rpx auto 0;padding:10rpx;}
 
 /****pay-tip****/
 .pay-tip{height:100rpx;width:72%;display:flex;flex-direction:row;align-items: center;justify-content:space-around;}
 .pay-tip text, .pay-tip button{font-size:25rpx;}
-.pay-tip button{height:50rpx;line-height:50rpx;}
+.pay-tip text{height:100%;}

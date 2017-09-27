@@ -1,45 +1,56 @@
 <view class="container">
     <view class="question">
         <view class="picture" wx:if="{{hasUserInfo}}">
-            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <image background-size="cover" bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}">
+            </image>
         </view>
         <view class="question-detail">
             <view class="text">
                 There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.There is a question that hard to deal with for me. Could you help me, thank you very much.
             </view>
             <view class="thumbnail">
-                <image class="img" wx:for="{{imgUrl}}" wx:key="unique" src="{{item}}" data-index="{{index}}" bindtap="previewImage"></image>
+                <image bindtap="previewImage" class="img" data-index="{{index}}" src="{{item}}" wx:for="{{imgUrl}}" wx:key="unique">
+                </image>
             </view>
-            <view class="remaining-time">还剩下{{remainingTime}}个小时</view>
-            <view class="helpers">共{{helpers}}人帮忙,同时被选中的将分享赏金￥{{tip}}元</view>
+            <view class="remaining-time">
+                还剩下{{remainingTime}}个小时
+            </view>
+            <view class="helpers">
+                共{{helpers}}人帮忙,同时被选中的将分享赏金￥{{tip}}元
+            </view>
         </view>
     </view>
-    <include src="../common/regulation.wxml" />
+    <include src="../common/regulation.wxml">
+    </include>
     <view class="solution" wx:if="{{solution}}">
-        <view class="solution-no">暂时没人帮</view>
+        <view class="solution-no">
+            暂时没人帮
+        </view>
     </view>
     <block wx:else>
-            <form>
-                <view class="solution">
-                    <view class="solution-helper">
-                        <view class="helper-info" wx:if="{{hasUserInfo}}">
-                            <view>
-                                <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
-                                <view class="userinfo-nickname">{{userInfo.nickName}}</view>
-                            </view>
-                            <view>
-                                <view class="average-tip">￥{{averageTip}}</view>
-                                <checkbox class="choose"></checkbox>
-                            </view>
+        <form>
+            <view class="solution" wx:for="{{answerGroup}}" wx:key="unique">
+                <view class="solution-helper">
+                    <view class="helper-info" wx:if="{{hasUserInfo}}">
+                        <view>
+                            <image class="userinfo-avatar" src="{{item.userinfoAvatarUrl}}"></image>
+                            <view class="userinfo-nickname">{{item.userinfoNickName}}</view>
                         </view>
-                        <view class="helper-advise">Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.</view>
-                        <view class="time-ago">{{timeAgo}}小时之前</view>
+                        <view>
+                            <view class="average-tip">￥{{averageTip}}</view>
+                            <checkbox class="choose">
+                            </checkbox>
+                        </view>
                     </view>
+                    <view class="helper-advise">{{item.userAnswer}}
+                    </view>
+                    <view class="time-ago">{{timeAgo}}小时之前</view>
                 </view>
-            </form>
-            <view class="pay-tip">
-                <text>已选中{{choosedHelper}}个回答,确定后帮手将分享赏金</text>
-                <button>确定</button>
             </view>
+        </form>
+        <view class="pay-tip">
+            <text>已选中{{choosedHelper}}个回答,确定后帮手将分享赏金</text>
+            <button>确定</button>
+        </view>
     </block>
 </view>
