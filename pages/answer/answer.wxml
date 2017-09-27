@@ -37,14 +37,15 @@
                             <view class="userinfo-nickname">{{item.userinfoNickName}}</view>
                         </view>
                         <view>
-                            <view class="average-tip">￥{{averageTip}}</view>
-                            <checkbox class="choose">
-                            </checkbox>
+                            <checkbox-group bindchange="checkboxChange">
+                                <view class="average-tip">￥{{avarageTip}}</view>
+                                <checkbox class="choose" checked="{{item.checked}}" value="{{item.value}}"></checkbox>
+                            </checkbox-group>
                         </view>
                     </view>
                     <view class="helper-advise">{{item.userAnswer}}
                     </view>
-                    <view class="time-ago">{{timeAgo}}小时之前</view>
+                    <view class="time-ago">{{timeAgo}}小时之前{{item.checked}}</view>
                 </view>
             </view>
         </form>

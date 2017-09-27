@@ -22,23 +22,33 @@ Page({
         helpers:0,
         tip:1,
         timeAgo:3, //问题在timeAgo之前回答
-        averageTip:1, //平分的赏金额
+        averageTip:0, //平分的赏金额
         choosedHelper:1, //被选中的回答者人数
+        checkboxArr:[],
+        checkboxMap:0,
         answerGroup:[
             {
                 userinfoAvatarUrl:'https://wx.qlogo.cn/mmopen/vi_32/d4dVeADn1RmEbU9JicX3niaBicurlPAZ1pKUHibastzHVoU9SdC77iamGTwwFptPMVkqQurNWLYvcgHFtpXROKckLCw/0',
                 userinfoNickName:'Mythrow',
                 userAnswer:"Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.",
+                value:"one",
+                name:"one",
+                checked:"",
             },
             {
                 userinfoAvatarUrl:'https://wx.qlogo.cn/mmopen/vi_32/d4dVeADn1RmEbU9JicX3niaBicurlPAZ1pKUHibastzHVoU9SdC77iamGTwwFptPMVkqQurNWLYvcgHFtpXROKckLCw/0',
                 userinfoNickName:'Mythrow',
                 userAnswer:"Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.",
+                value:"two",
+                name:"two",
+                checked:"",
             },
             {
                 userinfoAvatarUrl:'https://wx.qlogo.cn/mmopen/vi_32/d4dVeADn1RmEbU9JicX3niaBicurlPAZ1pKUHibastzHVoU9SdC77iamGTwwFptPMVkqQurNWLYvcgHFtpXROKckLCw/0',
                 userinfoNickName:'Mythrow',
                 userAnswer:"Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.",
+                value:"three",
+                checked:"",
             },
         ]
     },
@@ -89,5 +99,35 @@ Page({
             current:imgUrl[index],
             urls:imgUrl
         })
+    },
+    checkboxChange:function(e){
+        // 点击时将checkbox的值放入checkboxArr中
+        var ca;
+        ca = this.data.checkboxArr;
+        ca.push(e.detail.value[0]);
+        this.setData({
+            checkboxArr:ca
+        })
+        // 查找undefined的个数
+        var mark = 0;
+        for(var i = 0; i < ca.length; i++){
+            if(ca[i] === undefined)
+            {
+                mark++;
+                this.setData({checkboxMap:mark})
+            }
+        }
+        // 得到被选中人的数量
+        if(this.data.checkboxMap === 0){
+            this.setData({choosedHelper:ca.length})
+        }else{
+            this.setData({choosedHelper:ca.length - (this.data.checkboxMap*2)})
+        }
+        // 被选中的人的平均赏金
+        var avarage = this.data.tip/this.data.choosedHelper;
+        if(avarage % 1 < 1){
+            avarage = Math.floor(avarage*10)/10
+        }
+        this.setData({avarageTip:avarage})
     }
 })

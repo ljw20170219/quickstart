@@ -25,4 +25,4 @@
 /****pay-tip****/
 .pay-tip{height:100rpx;width:72%;display:flex;flex-direction:row;align-items: center;justify-content:space-around;}
 .pay-tip text, .pay-tip button{font-size:25rpx;}
-.pay-tip text{height:100%;}
+.pay-tip button{height:50rpx;line-height:50rpx}
