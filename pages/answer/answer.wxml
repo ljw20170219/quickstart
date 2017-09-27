@@ -38,7 +38,7 @@
                         </view>
                         <view>
                             <checkbox-group bindchange="checkboxChange">
-                                <view class="average-tip">￥{{avarageTip}}</view>
+                                <view class="average-tip" wx:if="{{avarageTip}}">￥{{avarageTip}}</view>
                                 <checkbox class="choose" checked="{{item.checked}}" value="{{item.value}}"></checkbox>
                             </checkbox-group>
                         </view>
