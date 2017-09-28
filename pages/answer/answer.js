@@ -21,29 +21,30 @@ Page({
         remainingTime:23,
         helpers:0,
         tip:1,
-        timeAgo:3, //问题在timeAgo之前回答
-        averageTip:0, //平分的赏金额
-        choosedHelper:1, //被选中的回答者人数
-        checkboxArr:[],
-        checkboxMap:0,
+        timeAgo:3, // 问题在timeAgo之前回答
+        averageTip:0, // 平分的赏金额
+        choosedHelper:0, // 被选中的回答者人数
+        checkboxArr:[], // 被选中的checkbox结果集
+        checkboxCancled:0,// 被取消选择的checkbox个数
         answerGroup:[
             {
+                userId:'1',
                 userinfoAvatarUrl:'https://wx.qlogo.cn/mmopen/vi_32/d4dVeADn1RmEbU9JicX3niaBicurlPAZ1pKUHibastzHVoU9SdC77iamGTwwFptPMVkqQurNWLYvcgHFtpXROKckLCw/0',
                 userinfoNickName:'Mythrow',
                 userAnswer:"Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.",
                 value:"one",
-                name:"one",
                 checked:"",
             },
             {
+                userId:'2',
                 userinfoAvatarUrl:'https://wx.qlogo.cn/mmopen/vi_32/d4dVeADn1RmEbU9JicX3niaBicurlPAZ1pKUHibastzHVoU9SdC77iamGTwwFptPMVkqQurNWLYvcgHFtpXROKckLCw/0',
                 userinfoNickName:'Mythrow',
                 userAnswer:"Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.",
                 value:"two",
-                name:"two",
                 checked:"",
             },
             {
+                userId:'3',
                 userinfoAvatarUrl:'https://wx.qlogo.cn/mmopen/vi_32/d4dVeADn1RmEbU9JicX3niaBicurlPAZ1pKUHibastzHVoU9SdC77iamGTwwFptPMVkqQurNWLYvcgHFtpXROKckLCw/0',
                 userinfoNickName:'Mythrow',
                 userAnswer:"Just do it, and never give up, when you have diffiuct on your work, don't be afraid, go on please.",
@@ -100,34 +101,24 @@ Page({
             urls:imgUrl
         })
     },
+    choose:function(e){
+        // console.log(e)
+    },
+_dada: 0,
     checkboxChange:function(e){
-        // 点击时将checkbox的值放入checkboxArr中
-        var ca;
-        ca = this.data.checkboxArr;
-        ca.push(e.detail.value[0]);
-        this.setData({
-            checkboxArr:ca
-        })
-        // 查找undefined的个数
-        var mark = 0;
-        for(var i = 0; i < ca.length; i++){
-            if(ca[i] === undefined)
-            {
-                mark++;
-                this.setData({checkboxMap:mark})
-            }
-        }
+        var idx = e.target.dataset.idx;
+        var val = e.detail.value[0];
         // 得到被选中人的数量
-        if(this.data.checkboxMap === 0){
-            this.setData({choosedHelper:ca.length})
-        }else{
-            this.setData({choosedHelper:ca.length - (this.data.checkboxMap*2)})
-        }
+        if(val) this.data.choosedHelper++;
+        else this.data.choosedHelper--;
+        //
+        this.data.answerGroup[idx].checked = val;
+
         // 被选中的人的平均赏金
-        var avarage = this.data.tip/this.data.choosedHelper;
-        if(avarage % 1 < 1){
-            avarage = Math.floor(avarage*10)/10
-        }
-        this.setData({avarageTip:avarage})
+        if(!this.data.choosedHelper) this.data.averageTip = 0;
+        else this.data.averageTip = Math.floor((this.data.tip/this.data.choosedHelper)*10)/10;
+
+        this.setData({avarageTip:this.data.averageTip});
+        this.setData({answerGroup:this.data.answerGroup});
     }
 })

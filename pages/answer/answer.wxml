@@ -29,7 +29,7 @@
     </view>
     <block wx:else>
         <form>
-            <view class="solution" wx:for="{{answerGroup}}" wx:key="unique">
+            <view class="solution" wx:for="{{answerGroup}}" wx:for-index="idx" wx:key="unique">
                 <view class="solution-helper">
                     <view class="helper-info" wx:if="{{hasUserInfo}}">
                         <view>
@@ -37,21 +37,26 @@
                             <view class="userinfo-nickname">{{item.userinfoNickName}}</view>
                         </view>
                         <view>
-                            <checkbox-group bindchange="checkboxChange">
-                                <view class="average-tip" wx:if="{{avarageTip}}">￥{{avarageTip}}</view>
-                                <checkbox class="choose" checked="{{item.checked}}" value="{{item.value}}"></checkbox>
+                            <checkbox-group bindchange="checkboxChange" data-idx="{{idx}}">
+                                <view class="average-tip" wx:if="{{item.checked}}">￥{{avarageTip}}</view>
+                                <checkbox class="choose" checked="{{item.checked}}" value="on"></checkbox>
                             </checkbox-group>
                         </view>
                     </view>
                     <view class="helper-advise">{{item.userAnswer}}
                     </view>
-                    <view class="time-ago">{{timeAgo}}小时之前{{item.checked}}</view>
+                    <view class="time-ago">{{timeAgo}}小时之前</view>
                 </view>
             </view>
         </form>
         <view class="pay-tip">
             <text>已选中{{choosedHelper}}个回答,确定后帮手将分享赏金</text>
-            <button>确定</button>
+            <block wx:if="{{!choosedHelper}}">
+                <button disabled="disabled">确定</button>
+            </block>
+            <block wx:else>
+                <button>确定</button>
+            </block>
         </view>
     </block>
 </view>
