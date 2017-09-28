@@ -119,6 +119,7 @@ _dada: 0,
         else this.data.averageTip = Math.floor((this.data.tip/this.data.choosedHelper)*10)/10;
 
         this.setData({avarageTip:this.data.averageTip});
+        this.setData({choosedHelper:this.data.choosedHelper});
         this.setData({answerGroup:this.data.answerGroup});
     }
 })
