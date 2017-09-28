@@ -53,7 +53,6 @@ Page({
             },
         ]
     },
-
     /**
      * 生命周期函数--监听页面加载
      */
@@ -101,10 +100,6 @@ Page({
             urls:imgUrl
         })
     },
-    choose:function(e){
-        // console.log(e)
-    },
-_dada: 0,
     checkboxChange:function(e){
         var idx = e.target.dataset.idx;
         var val = e.detail.value[0];
