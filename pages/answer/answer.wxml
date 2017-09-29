@@ -21,7 +21,7 @@
         </view>
     </view>
     <include src="../common/regulation.wxml"></include>
-    <view class="solution" wx:if="{{!solution}}">
+    <view class="solution" wx:if="{{solution}}">
         <view class="solution-no">
             <p>暂时没人帮</p>
             <include src="../common/searchHelper.wxml"></include>
@@ -54,7 +54,9 @@
                     <button>确定</button>
                 </view>
             </view>
-            <view class="search-helper" wx:else><button>邀请帮手</button></view>
+            <view class="search-helper" wx:else>
+                <include src="../common/searchHelper.wxml"></include>
+            </view>
         </form>
     </block>
 </view>
