@@ -7,6 +7,9 @@ var searchHelperObj = {
     },
     cancleShare:function(){
         searchHelperObj.data.showOrHide = 'show'
+    },
+    shareTofriend:function(){
+        console.log('aaa');
     }
 };
 
@@ -14,3 +17,4 @@ var searchHelperObj = {
 module.exports.data = searchHelperObj.data;
 module.exports.searchHelper = searchHelperObj.searchHelper;
 module.exports.cancleShare = searchHelperObj.cancleShare;
+module.exports.shareTofriend = searchHelperObj.shareTofriend;

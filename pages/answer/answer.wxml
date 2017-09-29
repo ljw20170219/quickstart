@@ -1,5 +1,4 @@
 <!-- 自己发出问题的页面 -->
-
 <view class="container">
     <view class="question">
         <view class="picture" wx:if="{{hasUserInfo}}">
@@ -23,7 +22,7 @@
         </view>
     </view>
     <include src="../common/regulation.wxml"></include>
-    <view class="solution" wx:if="{{solution}}">
+    <view class="solution" wx:if="{{!solution}}">
         <view class="solution-no">
             <p>暂时没人帮</p>
             <include src="../common/searchHelper.wxml"></include>

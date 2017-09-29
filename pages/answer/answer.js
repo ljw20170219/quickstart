@@ -15,8 +15,10 @@ Page({
      */
     data: {
         hasUserInfo:false,
+        canIUseShareByButton:wx.canIUse('button.open-type.share'),
         showView:true,
-        solution:false,
+        me:true,// 是否是当前用户的问题
+        solution:0,// 回答的人数
         imgUrl:[
             'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506421925352&di=1305aa2226d0b537ff0e88baa1a754b1&imgtype=jpg&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D3925072816%2C1436130400%26fm%3D214%26gp%3D0.jpg',
             'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506421924144&di=5947707df21f47455b78065c633f2662&imgtype=0&src=http%3A%2F%2Fwww.ikuku.cn%2Fwp-content%2Fuploads%2Fuser%2Fu1497%2FPOST%2Fp211963%2F1403092292994152-818x460.jpg',
@@ -89,7 +91,6 @@ Page({
                 }
             })
         }
-
     },
     showMore:function(){
         regObj.showMore()
@@ -127,5 +128,11 @@ Page({
     cancleShare:function(){
         searchHelperObj.cancleShare();
         this.setData({showOrHide:searchHelperObj.data.showOrHide});
+    },
+    shareToFriend:function(){
+        searchHelperObj.shareTofriend();
+    },
+    onShareAppMessage:function(options){
+        console.log(options)
     }
 })

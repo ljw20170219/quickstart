@@ -13,9 +13,7 @@
     </view>
     <view class="help-icon">帮</view>
     <view class="share-to" wx:if="{{canIUseShareByButton}}">
-        <button class="share-to-friend" open-type="share">
-            转发给朋友
-        </button>
-        <view bindtap="shareToCricle" class="share-to-circle">生成小程序二维码</view>
+        <button class="share-to-friend" open-type="share">转发给朋友</button>
+        <view bindtap="shareToCricle" class="share-to-circle">分享到朋友圈</view>
     </view>
 </view>
