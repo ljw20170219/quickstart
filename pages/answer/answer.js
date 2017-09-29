@@ -26,6 +26,7 @@ Page({
         choosedHelper:0, // 被选中的回答者人数
         checkboxArr:[], // 被选中的checkbox结果集
         checkboxCancled:0,// 被取消选择的checkbox个数
+        showOrHide:"",
         answerGroup:[
             {
                 userId:'1',
@@ -116,5 +117,11 @@ Page({
         this.setData({avarageTip:this.data.averageTip});
         this.setData({choosedHelper:this.data.choosedHelper});
         this.setData({answerGroup:this.data.answerGroup});
+    },
+    searchHelper:function(){
+        this.setData({showOrHide:"hide"})
+    },
+    cancleShare:function(){
+        this.setData({showOrHide:"show"})
     }
 })
