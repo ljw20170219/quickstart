@@ -34,6 +34,5 @@ App({
     },
     globalData: {
         userInfo: null,
-        showView: true,// 控制template显示与隐藏
     }
 })

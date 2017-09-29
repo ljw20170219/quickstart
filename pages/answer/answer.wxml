@@ -20,18 +20,11 @@
             </view>
         </view>
     </view>
-    <include src="../common/regulation.wxml">
-    </include>
-    <view class="solution" wx:if="{{solution}}">
+    <include src="../common/regulation.wxml"></include>
+    <view class="solution" wx:if="{{!solution}}">
         <view class="solution-no">
             <p>暂时没人帮</p>
-            <view class="search-helper {{showOrHide}}"><button class="search-helper-button" bindtap="searchHelper">邀请帮手</button></view>
-            <view class="cancle-search" wx:if="{{showOrHide === 'hide'}}">
-                <button class="share-to-friend">转发给朋友</button>
-                <button class="share-to-circle">分享到朋友圈</button>
-                <view class="hr"></view>
-                <button class="cancle-share" bindtap="cancleShare">取消</button>
-            </view>
+            <include src="../common/searchHelper.wxml"></include>
         </view>
     </view>
     <block wx:else>

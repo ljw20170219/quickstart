@@ -4,6 +4,10 @@ const app = getApp()
 
 // 引入regulation.js
 var regObj = require('../common/regulation.js')
+
+// 引入searchHelper.js
+var helpObj = require('../common/searchHelper.js')
+
 Page({
 
     /**
@@ -89,9 +93,7 @@ Page({
     },
     showMore:function(){
         regObj.showMore()
-        this.setData({
-            showView:app.globalData.showView
-        })
+        this.setData({showView:regObj.data.showView})
     },
     previewImage:function(e){
         var index = e.currentTarget.dataset.index,
@@ -119,9 +121,11 @@ Page({
         this.setData({answerGroup:this.data.answerGroup});
     },
     searchHelper:function(){
-        this.setData({showOrHide:"hide"})
+        helpObj.searchHelper();
+        this.setData({showOrHide:helpObj.data.showOrHide});
     },
     cancleShare:function(){
-        this.setData({showOrHide:"show"})
+        helpObj.cancleShare();
+        this.setData({showOrHide:helpObj.data.showOrHide});
     }
 })
