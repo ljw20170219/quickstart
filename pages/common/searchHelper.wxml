@@ -1,6 +1,6 @@
 <view class="searchHelper">
     <view class="search-helper {{showOrHide}}">
-        <button wx:if="{{me}}">我要帮Ta</button>
+        <button wx:if="{{!me}}">我要帮Ta</button>
         <button class="search-helper-button" bindtap="searchHelper">邀请帮手</button>
     </view>
     <view class="cancle-search" wx:if="{{showOrHide === 'hide' && canIUseShareByButton}}">

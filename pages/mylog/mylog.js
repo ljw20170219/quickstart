@@ -1,0 +1,2 @@
+var mylogObj = {};
+Page(mylogObj);

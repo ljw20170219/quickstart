@@ -12,7 +12,7 @@
 	"projectname": "quickstart",
 	"condition": {
 		"weapp": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": 0,
@@ -37,6 +37,11 @@
 					"name": "share-tip",
 					"pathName": "pages/share-tip/share-tip",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mylog",
+					"pathName": "pages/mylog/mylog"
 				}
 			]
 		},

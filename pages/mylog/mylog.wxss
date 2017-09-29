@@ -1,0 +1,2 @@
+.visual{background-color:yellow;}
+.navigation, .digital{border:1rpx solid;width:60%;margin:0 auto;}

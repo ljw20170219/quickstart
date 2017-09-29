@@ -1,36 +1,48 @@
 {
-    "pages":[
+    "pages": [
         "pages/index/index",
         "pages/logs/logs",
         "pages/template/template",
         "pages/share-tip/share-tip",
-        "pages/answer/answer"
+        "pages/answer/answer",
+        "pages/mylog/mylog"
     ],
-    "window":{
-        "backgroundTextStyle":"light",
+    "window":
+    {
+        "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "大咖来帮忙",
-        "navigationBarTextStyle":"black"
+        "navigationBarTextStyle": "black"
     },
-    "tabBar":{
+    "tabBar":
+    {
         "color": "#a9b7b7",
         "selectedColor": "#11cd6e",
-        "borderStyle":"white",
-        "list": [{
-          "selectedIconPath": "pages/image/circle.png",
-          "iconPath": "pages/image/circle.png",
-          "pagePath": "pages/index/index",
-          "text": "我的记录"
-        }, {
-          "selectedIconPath": "pages/image/circle.png",
-          "iconPath": "pages/image/circle.png",
-          "pagePath": "pages/logs/logs",
-          "text": "余额提现"
-        }, {
-          "selectedIconPath": "pages/image/circle.png",
-          "iconPath": "pages/image/circle.png",
-          "pagePath": "pages/share-tip/share-tip",
-          "text": "联系我们"
+        "borderStyle": "white",
+        "list": [
+        {
+            "selectedIconPath": "pages/image/circle.png",
+            "iconPath": "pages/image/circle.png",
+            "pagePath": "pages/index/index",
+            "text": "首页"
+        },
+        {
+            "selectedIconPath": "pages/image/circle.png",
+            "iconPath": "pages/image/circle.png",
+            "pagePath": "pages/logs/logs",
+            "text": "余额提现"
+        },
+        {
+            "selectedIconPath": "pages/image/circle.png",
+            "iconPath": "pages/image/circle.png",
+            "pagePath": "pages/share-tip/share-tip",
+            "text": "联系我们"
+        },
+        {
+            "selectedIconPath": "pages/image/circle.png",
+            "iconPath": "pages/image/circle.png",
+            "pagePath": "pages/mylog/mylog",
+            "text": "我的记录"
         }]
     }
 }

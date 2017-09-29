@@ -1,0 +1,19 @@
+<view>
+    <view class="visual">
+        <view class="navigation">
+            <p>我发出的</p>
+            <p>我收到的</p>
+        </view>
+        <view>adsfsdf</view>
+        <view class="digital">
+            <view>
+                <p>金额(元)</p>
+                <p>88888</p>
+            </view>
+            <view>
+                <p>数量(个)</p>
+                <p>88888</p>
+            </view>
+        </view>
+    </view>
+</view>
