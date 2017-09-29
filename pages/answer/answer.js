@@ -6,7 +6,7 @@ const app = getApp()
 var regObj = require('../common/regulation.js')
 
 // 引入searchHelper.js
-var helpObj = require('../common/searchHelper.js')
+var searchHelperObj = require('../common/searchHelper.js')
 
 Page({
 
@@ -121,11 +121,11 @@ Page({
         this.setData({answerGroup:this.data.answerGroup});
     },
     searchHelper:function(){
-        helpObj.searchHelper();
-        this.setData({showOrHide:helpObj.data.showOrHide});
+        searchHelperObj.searchHelper();
+        this.setData({showOrHide:searchHelperObj.data.showOrHide});
     },
     cancleShare:function(){
-        helpObj.cancleShare();
-        this.setData({showOrHide:helpObj.data.showOrHide});
+        searchHelperObj.cancleShare();
+        this.setData({showOrHide:searchHelperObj.data.showOrHide});
     }
 })

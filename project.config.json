@@ -28,14 +28,14 @@
 				},
 				{
 					"id": -1,
-					"name": "help",
-					"pathName": "pages/help/help",
+					"name": "answer",
+					"pathName": "pages/answer/answer",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "answer",
-					"pathName": "pages/answer/answer",
+					"name": "share-tip",
+					"pathName": "pages/share-tip/share-tip",
 					"query": ""
 				}
 			]

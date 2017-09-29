@@ -1,16 +1,16 @@
-var helpObj = {
+var searchHelperObj = {
     data:{
         showOrHide:'',
     },
     searchHelper:function(){
-        helpObj.data.showOrHide = 'hide';
+        searchHelperObj.data.showOrHide = 'hide';
     },
     cancleShare:function(){
-        helpObj.data.showOrHide = 'show'
+        searchHelperObj.data.showOrHide = 'show'
     }
 };
 
 // 释放接口
-module.exports.data = helpObj.data;
-module.exports.searchHelper = helpObj.searchHelper;
-module.exports.cancleShare = helpObj.cancleShare;
+module.exports.data = searchHelperObj.data;
+module.exports.searchHelper = searchHelperObj.searchHelper;
+module.exports.cancleShare = searchHelperObj.cancleShare;

@@ -3,7 +3,7 @@
         "pages/index/index",
         "pages/logs/logs",
         "pages/template/template",
-        "pages/help/help",
+        "pages/share-tip/share-tip",
         "pages/answer/answer"
     ],
     "window":{
@@ -29,7 +29,7 @@
         }, {
           "selectedIconPath": "pages/image/circle.png",
           "iconPath": "pages/image/circle.png",
-          "pagePath": "pages/help/help",
+          "pagePath": "pages/share-tip/share-tip",
           "text": "联系我们"
         }]
     }

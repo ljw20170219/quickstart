@@ -1,3 +1,5 @@
+<!-- 自己发出问题的页面 -->
+
 <view class="container">
     <view class="question">
         <view class="picture" wx:if="{{hasUserInfo}}">
