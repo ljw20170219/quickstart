@@ -49,12 +49,12 @@
                     <view class="time-ago">{{timeAgo}}小时之前</view>
                 </view>
             </view>
-        </form>
-        <view class="pay-tip" wx:if="{{!choosedHelper}}">
-            <view class="pay-tip-child">
-                <p>已选中{{choosedHelper}}个回答,确定后帮手将分享赏金</p>
-                <button>确定</button>
+            <view class="pay-tip" wx:if="{{choosedHelper}}">
+                <view class="pay-tip-child">
+                    <p>已选中{{choosedHelper}}个回答,确定后帮手将分享赏金</p>
+                    <button>确定</button>
+                </view>
             </view>
-        </view>
+        </form>
     </block>
 </view>
