@@ -16,4 +16,12 @@
             </view>
         </view>
     </view>
+    <view class="solution-log">
+        <view>
+            <p>我的问题</p>
+            <p>￥1.00</p>
+            <p>9月11日</p>
+            <p>08：47</p>
+        </view>
+    </view>
 </view>
