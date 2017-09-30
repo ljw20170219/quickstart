@@ -4,7 +4,7 @@
 /****导入searchHelper.css****/
 @import "../common/searchHelper.wxss"
 
-/****.question****/
+/****question****/
 .question{width:80%;display:flex;flex-direction:row}
 .question .picture{margin-right:15rpx}
 .userinfo-avatar{width:50rpx;height:50rpx;border-radius:50%;}

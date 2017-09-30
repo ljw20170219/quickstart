@@ -1,2 +1,9 @@
-.visual{background-color:yellow;}
-.navigation, .digital{border:1rpx solid;width:60%;margin:0 auto;}
+/****.visual****/
+.visual{}
+.navigation,.userinfo-avatar , .digital{display:flex;align-items:center;margin:0 auto;height:200rpx;}
+.navigation{justify-content:space-around;}
+.userinfo-avatar{justify-content:center;}
+.digital{justify-content:center;width:100%;}
+.digital view{width:100%;}
+.digital p{display: inline-block;text-align: center;width:100%;}
+.userinfo-avatar {width: 128rpx;height: 128rpx;border-radius: 50%;}
