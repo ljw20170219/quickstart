@@ -1,0 +1,2 @@
+var withdrawObj = {}
+Page(withdrawObj)

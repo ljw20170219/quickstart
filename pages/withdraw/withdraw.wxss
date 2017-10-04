@@ -1,0 +1,22 @@
+/*.container{background-color:yellow;}*/
+
+/****global****/
+.balance,
+.withdraw,
+.submit-area{margin-top:50rpx;margin-bottom:50rpx;}
+
+/****balance****/
+.balance{display:flex;justify-content:space-between;width:80%;}
+.balance p{display:block;}
+/****form****/
+form{width:80%;}
+
+/****withdraw****/
+.withdraw{width:100%;}
+.withdraw-num{position:relative;border-bottom:1rpx solid;z-index:3;width:80%;margin:50rpx auto 50rpx;padding-bottom:10rpx;}
+.withdraw-num label{position:absolute;}
+.withdraw-num input{width:80%;margin:0 auto;}
+.attention{font-size:30rpx;}
+
+/*submit-area*/
+.submit-area{text-align:center;}

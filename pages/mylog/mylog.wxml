@@ -1,30 +1,32 @@
 <view>
     <view class="visual">
         <view class="navigation">
-            <p>我发出的</p>
-            <p>我收到的</p>
+            <p class="send" bindtap="sendFromMe">我发出的</p>
+            <p class="receive" bindtap="receive">我收到的</p>
         </view>
         <image class="userinfo-avatar" wx:if="{{userInfo}}" src="{{userInfo.avatarUrl}}"></image>
         <view class="digital">
             <view>
                 <p>金额(元)</p>
-                <p>88888</p>
+                <p wx:if="{{send}}">{{sendTip.tip}}</p>
+                <p wx:else>{{receiveTip.tip}}</p>
             </view>
             <view>
                 <p>数量(个)</p>
-                <p>88888</p>
+                <p wx:if="{{send}}">{{sendTip.num}}</p>
+                <p wx:else>{{receiveTip.num}}</p>
             </view>
         </view>
     </view>
     <view class="solution-log">
-        <view>
+        <view wx:for="{{myQuestionGroup}}" class="my-question-group">
             <view class="detail-line">
-                <p>我的问题我的问题我的问题我的问题我的问题我的问题我的问题我的问题</p>
-                <p>￥1.00</p>
+                <p class="my-question">{{item.myQuestion}}</p>
+                <p class="my-question-pay">￥{{item.myQuestionPay}}</p>
             </view>
             <view class="detail-line">
-                <p>9月11日</p>
-                <p>08：47</p>
+                <p class="my-question-date">{{item.myQuestionDate}}</p>
+                <p class="my-question-time">{{item.myQuestionTime}}</p>
             </view>
         </view>
     </view>

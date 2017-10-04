@@ -5,7 +5,8 @@
         "pages/template/template",
         "pages/share-tip/share-tip",
         "pages/answer/answer",
-        "pages/mylog/mylog"
+        "pages/mylog/mylog",
+        "pages/withdraw/withdraw"
     ],
     "window":
     {
@@ -29,7 +30,7 @@
         {
             "selectedIconPath": "pages/image/circle.png",
             "iconPath": "pages/image/circle.png",
-            "pagePath": "pages/logs/logs",
+            "pagePath": "pages/withdraw/withdraw",
             "text": "余额提现"
         },
         {

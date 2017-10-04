@@ -1,5 +1,5 @@
 /****.visual****/
-.visual{}
+.visual{border-bottom:1rpx solid;}
 .navigation,.userinfo-avatar , .digital{display:flex;align-items:center;margin:0 auto;height:200rpx;}
 .navigation{justify-content:space-around;}
 .userinfo-avatar{justify-content:center;}
@@ -9,11 +9,12 @@
 .userinfo-avatar {width: 128rpx;height: 128rpx;border-radius: 50%;}
 
 /****solution-log****/
-.solution-log{width:90%;margin:0 auto;}
+.solution-log{width:90%;margin:30rpx auto 0;}
+.my-question-group{padding-top:15rpx;padding-bottom:15rpx;border-bottom:1rpx dashed #242929;}
 .detail-line{color:#242929;}
 .detail-line:nth-child(1){display:flex;justify-content:space-between;}
-.detail-line:nth-child(1) p:nth-child(1){display:block;width:80%;font-size:34rpx;}
-.detail-line:nth-child(2) p:nth-child(2){margin-left:50rpx;}
-.detail-line:nth-child(1) p:nth-child(2),
-.detail-line:nth-child(2) p:nth-child(1),
-.detail-line:nth-child(2) p:nth-child(2){font-size:30rpx;}
+.detail-line .my-question{display:block;width:80%;font-size:34rpx;}
+.detail-line .my-question-time{margin-left:50rpx;}
+.detail-line .my-question-pay,
+.detail-line .my-question-date,
+.detail-line .my-question-time{font-size:30rpx;}

@@ -1,0 +1,20 @@
+<view class="container">
+    <view class="balance">
+        <p>帐户余额</p>
+        <p>154684元</p>
+    </view>
+    <form>
+        <view class="withdraw">
+            <p>提现金额</p>
+            <view class="withdraw-num">
+                <label>￥</label>
+                <input type="text" name="withdraw"></input>
+            </view>
+        </view>
+        <p class="attention">提现到微信钱包,另收取5%的服务费.</p>
+        <view class="submit-area">
+            <button>提现</button>
+            <p class="attention">1-5个工作日到帐</p>
+        </view>
+    </form>
+</view>
