@@ -7,3 +7,13 @@
 .digital view{width:100%;}
 .digital p{display: inline-block;text-align: center;width:100%;}
 .userinfo-avatar {width: 128rpx;height: 128rpx;border-radius: 50%;}
+
+/****solution-log****/
+.solution-log{width:90%;margin:0 auto;}
+.detail-line{color:#242929;}
+.detail-line:nth-child(1){display:flex;justify-content:space-between;}
+.detail-line:nth-child(1) p:nth-child(1){display:block;width:80%;font-size:34rpx;}
+.detail-line:nth-child(2) p:nth-child(2){margin-left:50rpx;}
+.detail-line:nth-child(1) p:nth-child(2),
+.detail-line:nth-child(2) p:nth-child(1),
+.detail-line:nth-child(2) p:nth-child(2){font-size:30rpx;}

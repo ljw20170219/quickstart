@@ -41,7 +41,8 @@
 				{
 					"id": -1,
 					"name": "mylog",
-					"pathName": "pages/mylog/mylog"
+					"pathName": "pages/mylog/mylog",
+					"query": ""
 				}
 			]
 		},
