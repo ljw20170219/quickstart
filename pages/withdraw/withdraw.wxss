@@ -3,7 +3,7 @@
 /****global****/
 .balance,
 .withdraw,
-.submit-area{margin-top:50rpx;margin-bottom:50rpx;}
+.submit-area{margin:50rpx 0;}
 
 /****balance****/
 .balance{display:flex;justify-content:space-between;width:80%;}
