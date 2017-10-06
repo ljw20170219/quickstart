@@ -19,7 +19,7 @@
         </view>
     </view>
     <view class="solution-log">
-        <view wx:for="{{myQuestionGroup}}" class="my-question-group">
+        <view wx:if="{{send}}" wx:for="{{myQuestionGroup}}" class="my-question-group">
             <view class="detail-line">
                 <p class="my-question">{{item.myQuestion}}</p>
                 <p class="my-question-pay">￥{{item.myQuestionPay}}</p>

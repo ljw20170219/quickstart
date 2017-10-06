@@ -58,9 +58,7 @@ var indexObj = {
     },
     showMore:function(){
         regObj.showMore()
-        this.setData({
-            showView : app.globalData.showView
-        })
+        this.setData({showView : regObj.data.showView})
     },
     //判断赏金金额
     showSubmit:function(e){
