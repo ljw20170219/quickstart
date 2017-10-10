@@ -19,7 +19,26 @@ var indexObj = {
     //     })
     // },
     uploadImg:function(){
+        var that = this;
+        wx.request({
+                    url:'https://www.baidu.com',
+                    data:{},
+                    header:{
+                        'content-type' : 'application/json'
+                    },
+                    success:function(res){
+                        console.log(res.data);
+                    }
+                })
+        // wx.chooseImage({
+        //     count:3,
+        //     success:function(res){
+        //         console.log(res);
+        //         var tempFilePaths = res.tempFilePaths;
 
+        //         // upload();
+        //     }
+        // })
     },
     onLoad: function () {
         if (app.globalData.userInfo) {
@@ -79,3 +98,6 @@ var indexObj = {
     }
 }
 Page(indexObj);
+function upload(){
+
+}

@@ -26,3 +26,6 @@
 
 ## 备注(待修改)
 - 暂定help.wxml页面为tabBar页面,跳转函数为wx.switchTab,后期将换成wx.navigateTo方法,[详见此页面最后一行](https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html#wxrelaunchobject)
+
+## 接口
+    http://api.red.wedev.cc

@@ -36,12 +36,6 @@
         {
             "selectedIconPath": "pages/image/circle.png",
             "iconPath": "pages/image/circle.png",
-            "pagePath": "pages/share-tip/share-tip",
-            "text": "联系我们"
-        },
-        {
-            "selectedIconPath": "pages/image/circle.png",
-            "iconPath": "pages/image/circle.png",
             "pagePath": "pages/mylog/mylog",
             "text": "我的记录"
         }]
